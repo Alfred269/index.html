@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfredo Rodriguez</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        .menu-wrapper ul{
+            padding: 0;
+            list-style: none;
+
+        }
+
+        .principal-menu > li {
+            display: inline-block;
+        }
+
+        .principal-menu > li > a{
+            display: block;
+            padding: 10px 5px;
+            width: 90px;
+        }
+
+        li ul{
+            position: absolute;
+            display: none;
+        }
+
+        .sub-menu a {
+            display: block;
+            padding: 10px 5px;
+            width: 130px;
+        }
+
+        li:hover ul{
+            display: block;
+        }
+
+        .menu-wrapper, li ul{
+            background: #333;
+        } 
+
+        .principal-menu {
+            width: 412px;
+            margin: 0 auto;
+        }
+
+        .principal-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .principal-menu li:hover{
+            background: #f75e25;
+            text-shadow: 0 0 2px #000;
+        }
+
+
+    </style>
+</head>
+
+    <div class="menu-wrapper">
+        <ul class="principal-menu">
+            <li><a href="file:///C:/Users/alfre/Documents/sistemas/index.html/index.html">¿Quien soy?</a></li>
+            <li><a href="file:///C:/Users/alfre/Documents/sistemas/index.html/Gustos.html">Gustos</a>
+            </li>
+            <li><a href="file:///C:/Users/alfre/Documents/sistemas/index.html/Habilidades.html">Habilidades</a>
+            </li>
+            <li><a href="file:///C:/Users/alfre/Documents/sistemas/index.html/Contacto.html">Contacto</a></li>
+            <li><a href="file:///C:/Users/alfre/Documents/sistemas/index.html/Taria1.html">Tarea 1</a></li>
+  </div>
+
+<h2>Netflix</h2>
+<p>¿Qué es Netflix?</p><br>
+<p>Netflix es un servicio de streaming por suscripción que les permite a sus miembros ver series y películas sin publicidades en un dispositivo con conexión a internet.   
+También puedes descargar series y películas en un dispositivo con iOS, Android o Windows 10 y verlas sin conexión a internet.</p>
+<p>Puedes ver Netflix a través de cualquier dispositivo con conexión a internet que cuente con la app de Netflix, incluidos smart TV, consolas de juegos, reproductores multimedia, decodificadores, smartphones y tablets. También puedes ver Netflix en tu computadora, en un navegador de internet. Para obtener información sobre los navegadores web compatibles, consulta los requisitos del sistema, además de nuestras recomendaciones sobre la velocidad de conexión a internet para lograr el mejor rendimiento.</p><br> 
+
+
+
+
+
+<h2>¿Cómo está programado Netflix?</h2><br>
+<p>Netflix parece algo tan sencillo: le das al play y el vídeo se reproduce de forma mágica. Parece fácil, ¿no? Pues no lo es tanto.
+Lo lógico sería pensar que Netflix distribuye sus vídeos utilizando AWS (el servicio de computación en la nube de Amazon). Le das al play en una aplicación de Netflix y el vídeo almacenado en Amazon S3 se transmite a través de Internet directamente a tu dispositivo. Algo que sería de lo más lógico... para un servicio mucho más pequeño.
+Netflix está dividido en tres partes: el cliente, el servidor backend y la red de distribución de contenidos (CDN "content delivery network" en inglés).
+El cliente es la interfaz de usuario en cualquier dispositivo utilizado para navegar y reproducir vídeos de Netflix,
+<p> Todo lo que sucede antes de que le des al botón de play ocurre en el servidor backend y se ejecuta en el AWS.</p>
+Todo lo que sucede después de presionar play es gestionado por Open Connect. Open Connect es la red de distribución de contenidos (CDN) a nivel global y personalizada de Netflix.
+Netflix controla tu experiencia de visualización de vídeo de principio a fin y por eso funciona cuando le das al play desde cualquier lugar del mundo, proporcionándote el contenido que deseas ver cuando quieres verlo de forma fiable.</p>
+
+
+
+<h2>WhatsApp</h2>
+
+<p>¿Qué es WhatsApp?</p><br>
+<p>WhatsApp Messenger es una aplicación de mensajería instantánea para teléfonos inteligentes, en la que se envían y reciben mensajes mediante Internet, así como imágenes, vídeos, audios, grabaciones de audio.
+Según datos de principios del año 2020, es líder en mensajería instantánea en gran parte del mundo, en el que supera los 2000 millones de usuarios, superando a otras aplicaciones como Facebook Messenger o Telegram, entre otros.</p>
+
+
+
+<h2>¿Cómo está programado WhatsApp?</h2><br>
+<p>WhatsApp está programado en Erlang, una lenguaje de programación orientado a la concurrencia, algo que imprescindible en un servicio de chat en tiempo real en el que sus creadores confiaban y esperaban conseguir millones de usuarios como finalmente ha ocurrido. En cuanto a los servidores, la compañía optó en su momento por utilizar FreeBSD como sistema operativo, acompañado de tecnologías como PHP y Yaws como servidor web.
+Cuando se envía una foto, un vídeo o cualquier otro tipo de contenido son cifrados con los sistemas Whisper y subidos al servidor HTTP de la herramienta y después son enviados al destinatario. Todos los contenidos enviados a través de la herramienta son cifrados en BASE 64 y RADIX 64 tumbinals.</p><br>
+
+<h2>Discord</h2><br>
+
+<p>Discord es un servicio de mensajería instantánea freeware de chat de voz VolP, video y chat por texto. Funciona a través de servidores y está separado en canales de texto o de voz. Discord está disponible para Microsoft Windows, MacOS, Android, iOS y Linux.
+Discord no nació porque un equipo tenía en mente crear una app de mensajería, no, Discord nació por accidente, ya que sus creadores buscaban tener un sistema de comunicación eficiente para un juego que acababan de desarrollar.
+Todo comenzó cuando Jason Citron, fundador y actual CEO de Discord, trabajaba en el desarrollo del juego para iPad 'Fates Forever' con Hammer & Chisel, su estudio de desarrollo de videojuegos. Dicho juego necesitaría que los jugadores se comunicaran en tiempo real. Ante esto, el equipo encontró varios problemas con las opciones de VoIP que se encontraban en ese momento en el mercado.</p>
+
+
+
+
+<h2>¿Cómo está programado Discord?</h2><br>
+<p>La base de Discord está en sus tripas, ya que se basa en el framework Electron, lo que le permite ser multiplataforma y estar disponible en web o como aplicación independiente ya sea en ordenadores o smartphones
+<p>. Además, Discord cuenta con 11 centros de datos que están ubicados en zonas estratégicas en todo el mundo, ya que uno de los objetivos principales de la app es mantener siempre la baja latencia.</p>
+Entre las características de Discord nos encontramos con servidores de chat de voz gratuitos, además de conexiones dedicadas, así como llamadas directas, soporte para vídeollamadas y pantalla compartida. También cuenta con su propia API gratuita, conocida como GameBridge, que permite a los desarrolladores de juegos añadir integración nativa a Discord.</p>
+
+
+</body>
+</html>
